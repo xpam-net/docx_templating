@@ -11,7 +11,7 @@ from docx import Document
 from lxml import etree
 
 class DocxT:
-    """ Class for template editing """
+    """ Class for templates editing """
     # headers and footers reltypes
     HEADER_FOOTER = ("http://schemas.openxmlformats.org/officeDocument/2006/relationships/header",
                      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/footer")
@@ -105,17 +105,3 @@ class DocxT:
     def get_all_tags(self):
         """ Set of all tags """
         return self.get_body_tags().union(self.get_header_footer_tags())
-
-if __name__ == "__main__":
-# example part
-    substitutes = {
-        'hello' : 'Hello! Привет! ¡Hola!',
-        'test'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        'bye'   : 'Bye! Пока! ¡Adiós!',
-        'chars' : '[ < > ? . * { } & % " \' ]',
-    }
-
-    tpl = DocxT('template.docx')
-    print(tpl.get_all_tags())
-    tpl.replace_all(substitutes)
-    tpl.save_file('result.docx')
