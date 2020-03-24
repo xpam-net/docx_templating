@@ -52,7 +52,7 @@ class DocxT:
         str = str.replace("<", "&lt;")
         str = str.replace(">", "&gt;")
         str = str.replace("'", "&apos;")
-        str = str.replace("\"", "&quot;")
+        str = str.replace('"', "&quot;")
         return str
 
     def xml_to_string(self, xml):
