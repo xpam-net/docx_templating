@@ -14,7 +14,7 @@ Simple module for replacing {{tags}} inside Microsoft Word docx documents
 
 ### Getting Started
 
-Just import *docxt* inside you program. See example [example.py](example.py) file.
+Just import *docxt* inside you program. See [example.py](example.py) file.
 
 ## Author
 
