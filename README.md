@@ -1,6 +1,6 @@
 # docx_templating
 
-Simple docx templating on python
+Simple python docx templating
 
 ## Introduction
 
