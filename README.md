@@ -4,13 +4,17 @@ Simple docx templating on python
 
 ## Introduction
 
-Code example of replacing {{tags}} inside Microsoft Word docx documents
+Simple module for replacing {{tags}} inside Microsoft Word docx documents
 
 ### Prerequisites
 
 * Python >= 3.6
 * python-docx package >=0.8.8
 * lxml >= 2.3.2
+
+### Getting Started
+
+Just import *docxt* inside you program. See example [example.py](example.py) file.
 
 ## Author
 
