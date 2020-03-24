@@ -8,7 +8,7 @@ Simple module for replacing {{tags}} inside Microsoft Word docx documents
 
 ### Prerequisites
 
-* Python >= 3.6
+* Python 3
 * python-docx >=0.8.8
 * lxml >= 2.3.2
 
